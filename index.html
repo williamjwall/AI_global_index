@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            AI GLOBAL INDEX
+        </title>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBYaGF8mL8Dh92AGSfwBgHjkDephxDSrs&callback=initMap"
+  type="text/javascript"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Mainland China's Global Investments</h1>
+        <p style="text-align: center;">
+            <a href="https://www.aei.org/china-global-investment-tracker/?ncid=txtlnkusaolp00000618" target="_blank">Source</a>&nbsp;&nbsp;
+            <a href="https://github.com/davamini/china_global_investments.github.io" target="_blank">GitHub</a>
+        </p>
+
+        <div id="country_column_charts">
+            <div id="countryChart"></div>
+            <div id="investment_by_country_chart"></div>
+        </div>
+        <div class="charts">
+            <div id="investment_by_sector_chart"></div>
+            <div id="investment_by_country_over_time"></div>
+        </div>
+        <div class="geo-description">
+            <ul style="display: grid; grid-template-columns: 50% 50% ">
+                <li>Investment seems to be influenced more by a country's resources than its wealth. </li>
+                <li style="margin-left:40px;">Rich countries seem to generally attract investment in real estate,
+                    transport, and finance, while poorer countries attract investment in energy and metals.</li>
+            </ul>
+            <ul style="display: grid; grid-template-columns: 50% 50%; ">
+                <li>While real estate and finance play a big role in investment for the U.S. and U.K., China's greatest investments
+                    in other rich countries like Australia, France, and Norway are in energy.</li>
+                <li style="margin-left:40px;">China's top global investments are in energy, metals, and transport.</li>
+            </ul>
+        </div>
+        <div class="charts">
+            <div id="barchart"></div>
+            <ul>
+                <li>CIC (China Investment Corporation), a sovereign wealth fund, invests heavily in <a href="https://www.wikicorporates.org/wiki/China_Investment_Corporation" target="_blank">real estate.</a><b> Finance/Real Estate/Shipping</b></li>
+                <li>CNPC (China National Petroleum Corporation), a major oil and gas corporation.<b> Energy</b></li>
+                <li>Sinopec (China Petroleum & Chemical Corporation), a major oil and gas corporation.<b> Energy</b></li>
+                <li>HNA (HNA Group), a conglomerate involved in <a href="https://www.reuters.com/article/us-hilton-wrldwide-stake-hna-group-idUSKCN12O1GM" target="_blank">hotels</a>,
+                    <a href="https://centreforaviation.com/data/profiles/airline-groups/hainan-airlines-group-hna" target="_blank">airlines</a>, and
+                    <a href="https://web.archive.org/web/20160302013635/http://www.hnagroup.com/en/business/hna-logistics/logistics-introduction/" target="_blank">shipping/logistics</a>. <b> Real Estate</b></li>
+                <li>Chem China (China National Chemical Corporation), a state-owned chemical company. <b> Chemicals</b></li>
+                <li>CNOOC (China National Offshore Oil Corporation), a major oil and gas corporation.<b> Energy</b></li>
+                <li>State Grid Corporation of China (State Grid), a state-owned electric utility corporation, the <a href="https://www.globalelectricity.org/members/state-grid-corporation-of-china/" target="_blank">largest in the world.</a><b> Energy</b></li>
+                <li>SAFE (State Administration of Foreign Exchange), a foreign exchange regulatory agency. <b> Finance</b></li>
+                <li>Chinalco (Aluminum Corporation of China), a multinational aluminium corporation. <b> Metals</b></li>
+                <li>Tencent, a multinational technology company. <b>Technology</b></li>
+            </ul>
+        </div>
+        <div class="charts">
+            <div id="linechart"></div>
+            <ul>
+                <li>Donald Trump's trade war with China began at about
+                    <a href="https://www.reuters.com/article/us-usa-trade-china-timeline/timeline-key-dates-in-the-u-s-china-trade-war-idUSKBN1ZE1AA" target="_blank">mid 2017,</a> which correlates
+                    with the sudden
+                    <a href="https://www.nytimes.com/2019/07/21/us/politics/china-investment-trade-war.html" target="_blank">decline in China's global investments</a> (primarily in the U.S.) from 2017 to 2019.</li>
+                <li>Covid-19 decreased global investment
+                    <a href="https://unctad.org/news/global-foreign-direct-investment-falls-49-first-half-2020" target="_blank">by almost half</a>
+                    during the first half of 2020, which helps explain the extra steep decline from 2019 to 2020.</li>
+                <li>Energy was the <a href="https://www.bloomberg.com/news/articles/2020-10-30/energy-sector-s-tumble-has-now-reached-historic-levels" target="_blank">worst</a> performing sector in 2020, and since a huge amount of China's global investments are in energy, it makes sense that their global investments declined so rapidly.</li>
+            </ul>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
