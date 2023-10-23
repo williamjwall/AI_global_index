@@ -1,8 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            AI GLOBAL INDEX
-        </title>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI GLOBAL INDEX</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBYaGF8mL8Dh92AGSfwBgHjkDephxDSrs&callback=initMap" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>AI GLOBAL INDEX</h1>
+    <p style="text-align: center;">
+        <a href="https://aiindex.stanford.edu/report/" target="_blank">Source</a>&nbsp;&nbsp;
+        <a href="https://github.com/williamjwall/AI_global_index" target="_blank">GitHub</a>
+    </p>
+
+    <div id="country_column_charts">
+        <div id="countryChart"></div>
+        <div id="investment_by_country_chart"></div>
+    </div>
+    <div class="charts">
+        <div id="investment_by_sector_chart"></div>
+        <div id="investment_by_country_over_time"></div>
+    </div>
+
+    <div class="charts">
+      <p>
+        The AI Index is an independent initiative at the Stanford Institute for Human-Centered Artificial Intelligence (HAI), led by the AI Index Steering Committee, an interdisciplinary group of experts from across academia and industry. The annual report tracks, collates, distills, and visualizes data relating to artificial intelligence, enabling decision-makers to take meaningful action to advance AI responsibly and ethically with humans in mind.
+    </p>
+
+    <p>
+        The AI Index collaborates with many different organizations to track progress in artificial intelligence. These organizations include: the Center for Security and Emerging Technology at Georgetown University, LinkedIn, NetBase Quid, Lightcast, and McKinsey. The 2023 report also features more self-collected data and original analysis than ever before. This year’s report included new analysis on foundation models, including their geopolitics and training costs, the environmental impact of AI systems, K-12 AI education, and public opinion trends in AI. The AI Index also broadened its tracking of global AI legislation from 25 countries in 2022 to 127 in 2023.
+    </p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
 </html>
