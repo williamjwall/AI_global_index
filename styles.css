@@ -1,45 +1,87 @@
-.geo-description {
-  margin-top: 110px;
-  font-size: 120%;
-  margin-left: 16vw;
-  margin-right: 16vw;
-}
-.charts {
-  display: grid;
-  grid-template-columns: 50% 50%;
+body {
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
-#country_column_charts {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin-bottom: 50px;
+header {
+  background-color: #333;
+  padding: 50px;
+  color: white;
+  text-align: left;
+}
+nav {
+  text-align: left;
+}
+nav a {
+  display: inline-block;;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 20px;
+  text-align: left;
 }
 
-#barchart {
-  height: 70vh;
-}
-#linechart {
-  height: 70vh;
+section#about {
+  padding: 50px;
+  text-align: left;
+  background-color: #f1f1f1;
 }
 
-h1, p {
-  text-align: center;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+section#about h2 {
+  color: #333;
 }
-figcaption {
-  text-align: center;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+h1 {
+  margin: 0;
+}
+
+section#Map h2{
+  padding: 50px;
+  text-align: left;
+  color: #0b0b0b;
+  background-color: #b1adad;
+
+}
+
+a {
+  text-decoration: none;
+  color: #333;
   font-weight: bold;
 }
 
-li {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-  padding: 5px 0px;
+.right-nav {
+  float: right;
+  margin-top: -60px;
 }
-ul {
-  margin-top: 70px;
-  margin-right:210px;
-  font-size: large;
+
+#country_column_charts, .charts {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 0;
+  color: #333;
+}
+
+.charts {
+  height: 70vh;
+}
+
+#barChart_corr{
+  margin-bottom: 100px;
+}
+
+.charts, ul{
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 80px 20px 20px;
+  font-size: medium;
+}
+
+li {
+  text-align: left;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 5px 0px;
+  font-size: smaller;
 }

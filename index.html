@@ -1,39 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>AI GLOBAL INDEX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBYaGF8mL8Dh92AGSfwBgHjkDephxDSrs&callback=initMap" type="text/javascript"></script>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body>
+
+<!-- Header -->
+<header>
     <h1>AI GLOBAL INDEX</h1>
-    <p style="text-align: center;">
-        <a href="https://aiindex.stanford.edu/report/" target="_blank">Source</a>&nbsp;&nbsp;
-        <a href="https://github.com/williamjwall/AI_global_index" target="_blank">GitHub</a>
-    </p>
+    <nav>
+      <a href="https://www.tortoisemedia.com/intelligence/global-ai/" target="_blank">Source</a>
+      <a href="https://github.com/williamjwall/AI_global_index" target="_blank">GitHub</a>
+   </nav>
+   <nav class="right-nav">
+    <a href="#Findings">Findings</a>
+    <a href="#Map">Map</a>
+  </nav>
+</header>
 
-    <div id="country_column_charts">
-        <div id="countryChart"></div>
-        <div id="investment_by_country_chart"></div>
-    </div>
-    <div class="charts">
-        <div id="investment_by_sector_chart"></div>
-        <div id="investment_by_country_over_time"></div>
-    </div>
-
-    <div class="charts">
-      <p>
-        The AI Index is an independent initiative at the Stanford Institute for Human-Centered Artificial Intelligence (HAI), led by the AI Index Steering Committee, an interdisciplinary group of experts from across academia and industry. The annual report tracks, collates, distills, and visualizes data relating to artificial intelligence, enabling decision-makers to take meaningful action to advance AI responsibly and ethically with humans in mind.
-    </p>
-
+<!-- About Section -->
+<section id="about">
+    <h2>About the AI Global Index Project</h2>
     <p>
-        The AI Index collaborates with many different organizations to track progress in artificial intelligence. These organizations include: the Center for Security and Emerging Technology at Georgetown University, LinkedIn, NetBase Quid, Lightcast, and McKinsey. The 2023 report also features more self-collected data and original analysis than ever before. This year’s report included new analysis on foundation models, including their geopolitics and training costs, the environmental impact of AI systems, K-12 AI education, and public opinion trends in AI. The AI Index also broadened its tracking of global AI legislation from 25 countries in 2022 to 127 in 2023.
-    </p>
-    </div>
-    <script src="scripts.js"></script>
+      The AI Global Index Project is a comprehensive initiative evaluating the landscape of artificial intelligence. Analyzing AI publications from 2010 to 2022 reveals a substantial surge, driven by breakthroughs and collaborative research. GitHub stars reflect the popularity of AI libraries, with TensorFlow leading. The Index categorizes aspects like Talent, Infrastructure, and Commercial viability, assigning scores. Notably, the high Research score highlights a vibrant research ecosystem, driven by breakthroughs like GPT-2 and BERT. GitHub stars and AI scores provide valuable insights, guiding strategic decisions and offering a nuanced understanding of the global AI ecosystem.
+</section>
+
+
+<!-- Findings Section -->
+<section id="Findings">
+<div class="charts">
+  <div id="linechart"></div>
+  <ul>
+    The surge in AI-related publications over the past decade underscores the remarkable growth and impact of artificial intelligence on the global research landscape. In 2010, there were 162,444 publications, and each subsequent year witnessed a steady increase, reaching a projected count of 350,000 in 2022. This exponential rise in publication numbers reflects the expanding interest and engagement of the research community in advancing AI technologies. Major breakthroughs, such as the dominance of deep learning in 2012 and AlphaGo's victory in 2015, have not only fueled the curiosity of researchers but have also contributed to the prolific dissemination of knowledge in the field. The collaborative nature of AI development, coupled with breakthroughs like GPT-2, BERT, and AlphaFold, has led to a rich tapestry of research contributions, driving the evolution of artificial intelligence and shaping its multifaceted applications across various industries.
+  </ul>
+</div>
+<div class="charts">
+  <ul>
+    GitHub stars serve as a measure of a repository's popularity and community support within the developer and AI communities. Topping the chart is 'TensorFlow' with an impressive 160,672 stars, showcasing its widespread adoption and influence in the AI domain. Following closely are 'Pytorch' and 'Keras' with 52,745 and 53,218 stars respectively, highlighting the significant traction these libraries have gained. Other notable entries include 'OpenCV,' 'Scikit-learn,' 'DeepLearning-500-questions,' and 'TensorFlow-Examples,' each contributing to the rich ecosystem of tools and resources available for AI development. The cumulative GitHub stars offer valuable insights into the preferences and trust developers place in these libraries for building and exploring artificial intelligence applications.
+  </ul>
+  <div id="chart_div"></div>
+</div>
+</section>
+
+<!-- Maps Section -->
+<section id="Map">
+  <h2>Global Map (click a country)</h2>
+</section>
+
+<section id="country_column_charts">
+  <div id="countryChart"></div>
+  <div id="barChart"></div>
+  <!-- <div id="pieChart"></div> -->
+</section>
+
+
+<div class="charts">
+<div id="barChart_corr"></div>
+<ul>
+   <li>You can I find out more about the catagories <a href="https://www.tortoisemedia.com/intelligence/global-ai/#:~:text=focuses%20on%20the-,availability,-of%20skilled%20practitioners" target="_blank">here.</a> </li>
+   <li><strong>Talent (0.861969):</strong> A high talent score signifies the presence of a skilled workforce, crucial for driving innovation.</li>
+   <li><strong>Infrastructure (0.716481):</strong> A robust infrastructure score ensures a stable foundation for AI deployment, contributing to scalability.</li>
+   <li><strong>Operating Environment (0.368566):</strong> While a lower operating environment score signals potential challenges, it highlights areas for improvement in regulatory support and public perception.</li>
+   <li><strong>Research (0.945877):</strong> A high research score indicates a fertile ground for cutting-edge advancements, promising continuous innovation.</li>
+   <li><strong>Development (0.866337):</strong> A strong development score suggests a solid technological infrastructure, essential for sophisticated AI solutions.</li>
+   <li><strong>Government Strategy (0.531821):</strong> The government strategy score reflects the level of commitment from national governments, influencing the overall environment for AI growth.</li>
+   <li><strong>Commercial (0.857985):</strong> A high commercial score points to a thriving business ecosystem, showcasing market demand and economic opportunities.</li>
+</ul>
+</div>
+
+<script src="scripts.js"></script>
 </body>
 </html>
