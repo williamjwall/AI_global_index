@@ -1,6 +1,6 @@
 google.charts.load('current', {
   'packages':['corechart', 'geochart'],
-  'mapsApiKey':'API_KEY'
+  'mapsApiKey':'AIzaSyCy_gHXrqHtwd_0PYlRoQD35fqGT3kqkl4'
 });
 
 google.charts.setOnLoadCallback(drawRegionsMap);
@@ -14,7 +14,7 @@ var countries_obj = {};
 var country_score = [];
 var publication_count = []
 
-d3.csv("data/AI_index_db.csv").then(function(data) {
+d3.csv("AI_index_db.csv").then(function(data) {
   data.forEach(function(row) {
     var country = row['Country'];
     var totalScore = parseFloat(row['Total score']);
